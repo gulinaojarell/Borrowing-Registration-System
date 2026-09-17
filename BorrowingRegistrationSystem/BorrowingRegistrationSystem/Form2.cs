@@ -41,5 +41,40 @@ namespace BorrowingRegistrationSystem
             form1.Show();
             this.Hide();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (ChkPass.Checked)
+            {
+                TxtPass.UseSystemPasswordChar = true;
+            }
+            else
+            {
+                TxtPass.UseSystemPasswordChar = false;
+            }
+
+        }
+
+        private void TxtPass_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ChkCPass_CheckedChanged(object sender, EventArgs e)
+        {
+            if (ChkCPass.Checked)
+            {
+                TxtCpass.UseSystemPasswordChar = true;
+            }
+            else
+            {
+                TxtCpass.UseSystemPasswordChar = false;
+            }
+        }
     }
 }

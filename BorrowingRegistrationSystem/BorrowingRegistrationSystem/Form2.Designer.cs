@@ -33,7 +33,7 @@
             label3 = new Label();
             textBox2 = new TextBox();
             textBox1 = new TextBox();
-            textBox3 = new TextBox();
+            TxtPass = new TextBox();
             comboBox1 = new ComboBox();
             label4 = new Label();
             button1 = new Button();
@@ -42,10 +42,9 @@
             label7 = new Label();
             textBox5 = new TextBox();
             label8 = new Label();
-            textBox4 = new TextBox();
+            TxtCpass = new TextBox();
             label9 = new Label();
             button2 = new Button();
-            pictureBox2 = new PictureBox();
             pictureBox3 = new PictureBox();
             pictureBox4 = new PictureBox();
             pictureBox5 = new PictureBox();
@@ -53,7 +52,8 @@
             pictureBox7 = new PictureBox();
             pictureBox1 = new PictureBox();
             pictureBox8 = new PictureBox();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            ChkPass = new CheckBox();
+            ChkCPass = new CheckBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
@@ -68,7 +68,7 @@
             label2.AutoSize = true;
             label2.Font = new Font("Microsoft Sans Serif", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label2.ForeColor = Color.Blue;
-            label2.Location = new Point(656, 44);
+            label2.Location = new Point(645, 12);
             label2.Margin = new Padding(4, 0, 4, 0);
             label2.Name = "label2";
             label2.Size = new Size(225, 29);
@@ -81,7 +81,7 @@
             label3.AutoSize = true;
             label3.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label3.ForeColor = Color.Blue;
-            label3.Location = new Point(656, 88);
+            label3.Location = new Point(605, 56);
             label3.Margin = new Padding(4, 0, 4, 0);
             label3.Name = "label3";
             label3.Size = new Size(332, 18);
@@ -92,7 +92,7 @@
             // textBox2
             // 
             textBox2.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold);
-            textBox2.Location = new Point(645, 190);
+            textBox2.Location = new Point(680, 186);
             textBox2.Margin = new Padding(4, 2, 4, 2);
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(308, 30);
@@ -101,26 +101,28 @@
             // textBox1
             // 
             textBox1.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold);
-            textBox1.Location = new Point(645, 235);
+            textBox1.Location = new Point(680, 235);
             textBox1.Margin = new Padding(4, 2, 4, 2);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(308, 30);
             textBox1.TabIndex = 5;
             // 
-            // textBox3
+            // TxtPass
             // 
-            textBox3.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold);
-            textBox3.Location = new Point(645, 291);
-            textBox3.Margin = new Padding(4, 2, 4, 2);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(308, 30);
-            textBox3.TabIndex = 6;
+            TxtPass.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold);
+            TxtPass.Location = new Point(680, 286);
+            TxtPass.Margin = new Padding(4, 2, 4, 2);
+            TxtPass.Name = "TxtPass";
+            TxtPass.PasswordChar = '*';
+            TxtPass.Size = new Size(308, 30);
+            TxtPass.TabIndex = 6;
+            TxtPass.TextChanged += TxtPass_TextChanged;
             // 
             // comboBox1
             // 
             comboBox1.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold);
             comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(645, 382);
+            comboBox1.Location = new Point(680, 415);
             comboBox1.Margin = new Padding(4, 2, 4, 2);
             comboBox1.Name = "comboBox1";
             comboBox1.Size = new Size(308, 31);
@@ -131,7 +133,7 @@
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label4.ForeColor = Color.Blue;
-            label4.Location = new Point(430, 382);
+            label4.Location = new Point(451, 415);
             label4.Margin = new Padding(9, 0, 9, 0);
             label4.Name = "label4";
             label4.Size = new Size(129, 25);
@@ -143,19 +145,20 @@
             button1.BackColor = Color.Navy;
             button1.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button1.ForeColor = Color.White;
-            button1.Location = new Point(583, 454);
+            button1.Location = new Point(545, 494);
             button1.Name = "button1";
             button1.Size = new Size(121, 38);
             button1.TabIndex = 10;
             button1.Text = "Register";
             button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
             // 
             // label5
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold);
             label5.ForeColor = Color.Blue;
-            label5.Location = new Point(457, 140);
+            label5.Location = new Point(492, 141);
             label5.Name = "label5";
             label5.Size = new Size(102, 25);
             label5.TabIndex = 12;
@@ -166,7 +169,7 @@
             label6.AutoSize = true;
             label6.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold);
             label6.ForeColor = Color.Blue;
-            label6.Location = new Point(423, 240);
+            label6.Location = new Point(451, 235);
             label6.Name = "label6";
             label6.Size = new Size(136, 25);
             label6.TabIndex = 13;
@@ -177,7 +180,7 @@
             label7.AutoSize = true;
             label7.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold);
             label7.ForeColor = Color.Blue;
-            label7.Location = new Point(462, 291);
+            label7.Location = new Point(490, 287);
             label7.Name = "label7";
             label7.Size = new Size(97, 25);
             label7.TabIndex = 14;
@@ -186,7 +189,7 @@
             // textBox5
             // 
             textBox5.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold);
-            textBox5.Location = new Point(645, 140);
+            textBox5.Location = new Point(680, 136);
             textBox5.Margin = new Padding(4, 2, 4, 2);
             textBox5.Name = "textBox5";
             textBox5.Size = new Size(308, 30);
@@ -197,27 +200,28 @@
             label8.AutoSize = true;
             label8.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold);
             label8.ForeColor = Color.Blue;
-            label8.Location = new Point(507, 191);
+            label8.Location = new Point(535, 186);
             label8.Name = "label8";
             label8.Size = new Size(52, 25);
             label8.TabIndex = 17;
             label8.Text = "LRN:";
             // 
-            // textBox4
+            // TxtCpass
             // 
-            textBox4.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold);
-            textBox4.Location = new Point(645, 338);
-            textBox4.Margin = new Padding(4, 2, 4, 2);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(308, 30);
-            textBox4.TabIndex = 18;
+            TxtCpass.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold);
+            TxtCpass.Location = new Point(680, 353);
+            TxtCpass.Margin = new Padding(4, 2, 4, 2);
+            TxtCpass.Name = "TxtCpass";
+            TxtCpass.PasswordChar = '*';
+            TxtCpass.Size = new Size(308, 30);
+            TxtCpass.TabIndex = 18;
             // 
             // label9
             // 
             label9.AutoSize = true;
             label9.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold);
             label9.ForeColor = Color.Blue;
-            label9.Location = new Point(389, 338);
+            label9.Location = new Point(417, 353);
             label9.Name = "label9";
             label9.Size = new Size(170, 25);
             label9.TabIndex = 19;
@@ -228,7 +232,7 @@
             button2.BackColor = Color.Navy;
             button2.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button2.ForeColor = Color.White;
-            button2.Location = new Point(832, 454);
+            button2.Location = new Point(867, 494);
             button2.Name = "button2";
             button2.Size = new Size(121, 38);
             button2.TabIndex = 20;
@@ -236,23 +240,12 @@
             button2.UseVisualStyleBackColor = false;
             button2.Click += button2_Click;
             // 
-            // pictureBox2
-            // 
-            pictureBox2.BackColor = Color.Transparent;
-            pictureBox2.BackgroundImage = Properties.Resources._5087607;
-            pictureBox2.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBox2.Location = new Point(565, 131);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(61, 42);
-            pictureBox2.TabIndex = 21;
-            pictureBox2.TabStop = false;
-            // 
             // pictureBox3
             // 
             pictureBox3.BackColor = Color.Transparent;
             pictureBox3.BackgroundImage = (Image)resources.GetObject("pictureBox3.BackgroundImage");
             pictureBox3.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBox3.Location = new Point(565, 223);
+            pictureBox3.Location = new Point(605, 223);
             pictureBox3.Name = "pictureBox3";
             pictureBox3.Size = new Size(61, 42);
             pictureBox3.TabIndex = 22;
@@ -261,11 +254,11 @@
             // pictureBox4
             // 
             pictureBox4.BackColor = Color.Transparent;
-            pictureBox4.BackgroundImage = Properties.Resources._5087607;
+            pictureBox4.BackgroundImage = (Image)resources.GetObject("pictureBox4.BackgroundImage");
             pictureBox4.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBox4.Location = new Point(565, 179);
+            pictureBox4.Location = new Point(605, 177);
             pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(61, 42);
+            pictureBox4.Size = new Size(61, 39);
             pictureBox4.TabIndex = 23;
             pictureBox4.TabStop = false;
             // 
@@ -274,7 +267,7 @@
             pictureBox5.BackColor = Color.Transparent;
             pictureBox5.BackgroundImage = Properties.Resources._5087607;
             pictureBox5.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBox5.Location = new Point(565, 278);
+            pictureBox5.Location = new Point(605, 124);
             pictureBox5.Name = "pictureBox5";
             pictureBox5.Size = new Size(61, 42);
             pictureBox5.TabIndex = 24;
@@ -283,9 +276,9 @@
             // pictureBox6
             // 
             pictureBox6.BackColor = Color.Transparent;
-            pictureBox6.BackgroundImage = Properties.Resources._5087607;
+            pictureBox6.BackgroundImage = (Image)resources.GetObject("pictureBox6.BackgroundImage");
             pictureBox6.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBox6.Location = new Point(565, 326);
+            pictureBox6.Location = new Point(605, 340);
             pictureBox6.Name = "pictureBox6";
             pictureBox6.Size = new Size(61, 42);
             pictureBox6.TabIndex = 25;
@@ -294,9 +287,9 @@
             // pictureBox7
             // 
             pictureBox7.BackColor = Color.Transparent;
-            pictureBox7.BackgroundImage = Properties.Resources._5087607;
+            pictureBox7.BackgroundImage = (Image)resources.GetObject("pictureBox7.BackgroundImage");
             pictureBox7.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBox7.Location = new Point(565, 374);
+            pictureBox7.Location = new Point(605, 274);
             pictureBox7.Name = "pictureBox7";
             pictureBox7.Size = new Size(61, 42);
             pictureBox7.TabIndex = 26;
@@ -309,19 +302,43 @@
             pictureBox1.BackgroundImageLayout = ImageLayout.Stretch;
             pictureBox1.Location = new Point(0, -1);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(383, 523);
+            pictureBox1.Size = new Size(383, 600);
             pictureBox1.TabIndex = 11;
             pictureBox1.TabStop = false;
             // 
             // pictureBox8
             // 
-            pictureBox8.BackgroundImage = Properties.Resources.images__1_;
+            pictureBox8.BackgroundImage = (Image)resources.GetObject("pictureBox8.BackgroundImage");
             pictureBox8.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBox8.Location = new Point(501, 44);
+            pictureBox8.Location = new Point(462, 12);
             pictureBox8.Name = "pictureBox8";
             pictureBox8.Size = new Size(125, 62);
             pictureBox8.TabIndex = 27;
             pictureBox8.TabStop = false;
+            // 
+            // ChkPass
+            // 
+            ChkPass.AutoSize = true;
+            ChkPass.Font = new Font("Segoe UI", 7.8F, FontStyle.Bold);
+            ChkPass.Location = new Point(863, 321);
+            ChkPass.Name = "ChkPass";
+            ChkPass.Size = new Size(125, 21);
+            ChkPass.TabIndex = 28;
+            ChkPass.Text = "Show Password";
+            ChkPass.UseVisualStyleBackColor = true;
+            ChkPass.CheckedChanged += checkBox1_CheckedChanged;
+            // 
+            // ChkCPass
+            // 
+            ChkCPass.AutoSize = true;
+            ChkCPass.Font = new Font("Segoe UI", 7.8F, FontStyle.Bold);
+            ChkCPass.Location = new Point(863, 389);
+            ChkCPass.Name = "ChkCPass";
+            ChkCPass.Size = new Size(125, 21);
+            ChkCPass.TabIndex = 29;
+            ChkCPass.Text = "Show Password";
+            ChkCPass.UseVisualStyleBackColor = true;
+            ChkCPass.CheckedChanged += ChkCPass_CheckedChanged;
             // 
             // Form2
             // 
@@ -329,17 +346,18 @@
             AutoScaleMode = AutoScaleMode.Font;
             AutoSize = true;
             BackColor = Color.FromArgb(192, 255, 255);
-            ClientSize = new Size(1039, 534);
+            ClientSize = new Size(1005, 587);
+            Controls.Add(ChkCPass);
+            Controls.Add(ChkPass);
             Controls.Add(pictureBox8);
             Controls.Add(pictureBox7);
             Controls.Add(pictureBox6);
             Controls.Add(pictureBox5);
             Controls.Add(pictureBox4);
             Controls.Add(pictureBox3);
-            Controls.Add(pictureBox2);
             Controls.Add(button2);
             Controls.Add(label9);
-            Controls.Add(textBox4);
+            Controls.Add(TxtCpass);
             Controls.Add(label8);
             Controls.Add(textBox5);
             Controls.Add(label7);
@@ -349,7 +367,7 @@
             Controls.Add(button1);
             Controls.Add(label4);
             Controls.Add(comboBox1);
-            Controls.Add(textBox3);
+            Controls.Add(TxtPass);
             Controls.Add(textBox1);
             Controls.Add(textBox2);
             Controls.Add(label3);
@@ -359,7 +377,6 @@
             Name = "Form2";
             Text = "STEM - TVL";
             Load += Form2_Load;
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
@@ -376,7 +393,7 @@
         private Label label3;
         private TextBox textBox2;
         private TextBox textBox1;
-        private TextBox textBox3;
+        private TextBox TxtPass;
         private ComboBox comboBox1;
         private Label label4;
         private Button button1;
@@ -385,10 +402,9 @@
         private Label label7;
         private TextBox textBox5;
         private Label label8;
-        private TextBox textBox4;
+        private TextBox TxtCpass;
         private Label label9;
         private Button button2;
-        private PictureBox pictureBox2;
         private PictureBox pictureBox3;
         private PictureBox pictureBox4;
         private PictureBox pictureBox5;
@@ -396,5 +412,7 @@
         private PictureBox pictureBox7;
         private PictureBox pictureBox1;
         private PictureBox pictureBox8;
+        private CheckBox ChkPass;
+        private CheckBox ChkCPass;
     }
 }
