@@ -26,5 +26,10 @@ namespace BorrowingRegistrationSystem
             form1.Show();
             this.Hide();
         }
+
+        private void groupBox1_Enter_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }
