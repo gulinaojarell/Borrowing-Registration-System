@@ -9,7 +9,7 @@ using System.Drawing;
 
 namespace BorrowingRegistrationSystem
 {
-    public partial class Form4 : Form
+    public partial class DASHBOARD : Form
     {
         
 

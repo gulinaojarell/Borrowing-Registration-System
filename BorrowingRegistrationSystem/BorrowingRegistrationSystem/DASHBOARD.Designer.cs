@@ -1,6 +1,6 @@
 ﻿namespace BorrowingRegistrationSystem
 {
-    partial class Form4
+    partial class DASHBOARD
     {
         /// <summary>
         /// Required designer variable.
