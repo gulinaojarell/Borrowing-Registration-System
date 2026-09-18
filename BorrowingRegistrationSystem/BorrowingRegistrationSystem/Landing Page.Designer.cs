@@ -44,9 +44,10 @@
             button1.FlatStyle = FlatStyle.Flat;
             button1.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button1.ForeColor = Color.White;
-            button1.Location = new Point(46, 352);
+            button1.Location = new Point(40, 264);
+            button1.Margin = new Padding(3, 2, 3, 2);
             button1.Name = "button1";
-            button1.Size = new Size(146, 48);
+            button1.Size = new Size(128, 36);
             button1.TabIndex = 0;
             button1.Text = "Login";
             button1.UseVisualStyleBackColor = false;
@@ -58,9 +59,10 @@
             button2.FlatStyle = FlatStyle.Flat;
             button2.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button2.ForeColor = Color.White;
-            button2.Location = new Point(383, 352);
+            button2.Location = new Point(335, 264);
+            button2.Margin = new Padding(3, 2, 3, 2);
             button2.Name = "button2";
-            button2.Size = new Size(146, 48);
+            button2.Size = new Size(128, 36);
             button2.TabIndex = 1;
             button2.Text = "Register";
             button2.UseVisualStyleBackColor = false;
@@ -72,9 +74,9 @@
             label1.BackColor = Color.Transparent;
             label1.Font = new Font("Segoe UI", 19.8000011F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.White;
-            label1.Location = new Point(48, 63);
+            label1.Location = new Point(42, 47);
             label1.Name = "label1";
-            label1.Size = new Size(203, 46);
+            label1.Size = new Size(162, 37);
             label1.TabIndex = 2;
             label1.Text = "STEM - TVL";
             // 
@@ -84,9 +86,9 @@
             label2.BackColor = Color.Transparent;
             label2.Font = new Font("Segoe UI", 19.8000011F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label2.ForeColor = Color.White;
-            label2.Location = new Point(48, 109);
+            label2.Location = new Point(42, 82);
             label2.Name = "label2";
-            label2.Size = new Size(443, 46);
+            label2.Size = new Size(354, 37);
             label2.TabIndex = 3;
             label2.Text = "Equipment Borrowing and";
             // 
@@ -96,9 +98,9 @@
             label3.BackColor = Color.Transparent;
             label3.Font = new Font("Segoe UI", 19.8000011F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label3.ForeColor = Color.White;
-            label3.Location = new Point(48, 155);
+            label3.Location = new Point(42, 116);
             label3.Name = "label3";
-            label3.Size = new Size(329, 46);
+            label3.Size = new Size(269, 37);
             label3.TabIndex = 4;
             label3.Text = "Reservation System";
             // 
@@ -108,9 +110,9 @@
             label4.BackColor = Color.Transparent;
             label4.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label4.ForeColor = Color.White;
-            label4.Location = new Point(48, 262);
+            label4.Location = new Point(42, 196);
             label4.Name = "label4";
-            label4.Size = new Size(305, 23);
+            label4.Size = new Size(249, 19);
             label4.TabIndex = 5;
             label4.Text = "Empowering STEM and TVL students";
             // 
@@ -120,20 +122,20 @@
             label5.BackColor = Color.Transparent;
             label5.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label5.ForeColor = Color.White;
-            label5.Location = new Point(48, 239);
+            label5.Location = new Point(42, 179);
             label5.Name = "label5";
-            label5.Size = new Size(319, 23);
+            label5.Size = new Size(267, 19);
             label5.TabIndex = 6;
             label5.Text = "with easy access to the tools they need";
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(890, 450);
+            ClientSize = new Size(779, 349);
             Controls.Add(label5);
             Controls.Add(label4);
             Controls.Add(label3);
@@ -141,6 +143,7 @@
             Controls.Add(label1);
             Controls.Add(button2);
             Controls.Add(button1);
+            Margin = new Padding(3, 2, 3, 2);
             Name = "Form1";
             Text = "Form1";
             Load += Form1_Load;
