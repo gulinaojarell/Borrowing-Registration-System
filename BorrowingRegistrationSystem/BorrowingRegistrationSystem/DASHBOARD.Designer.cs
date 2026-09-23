@@ -28,9 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            btndashboard = new Button();
-            btnborrowing = new Button();
-            button3 = new Button();
+            btnDashboard = new Button();
             label1 = new Label();
             label2 = new Label();
             pictureBox1 = new PictureBox();
@@ -54,13 +52,13 @@
             label10 = new Label();
             label11 = new Label();
             pictureBox12 = new PictureBox();
-            textBox1 = new TextBox();
-            button1 = new Button();
+            txtSearch = new TextBox();
+            btnSearch = new Button();
             pictureBox13 = new PictureBox();
             label12 = new Label();
             pictureBox14 = new PictureBox();
-            pictureBox15 = new PictureBox();
-            pictureBox16 = new PictureBox();
+            pbTvl = new PictureBox();
+            pbStem = new PictureBox();
             pictureBox17 = new PictureBox();
             pictureBox21 = new PictureBox();
             pictureBox22 = new PictureBox();
@@ -75,6 +73,8 @@
             label19 = new Label();
             label20 = new Label();
             label21 = new Label();
+            btnBorrowing = new Button();
+            btnPrefer = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
@@ -89,8 +89,8 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox12).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox13).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox14).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox15).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox16).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pbTvl).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pbStem).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox17).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox21).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox22).BeginInit();
@@ -98,41 +98,17 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox24).BeginInit();
             SuspendLayout();
             // 
-            // btndashboard
+            // btnDashboard
             // 
-            btndashboard.BackColor = Color.FromArgb(128, 255, 255);
-            btndashboard.Font = new Font("Stencil", 9F);
-            btndashboard.Location = new Point(208, 9);
-            btndashboard.Margin = new Padding(3, 2, 3, 2);
-            btndashboard.Name = "btndashboard";
-            btndashboard.Size = new Size(147, 22);
-            btndashboard.TabIndex = 0;
-            btndashboard.Text = "DASHBOARD";
-            btndashboard.UseVisualStyleBackColor = false;
-            // 
-            // btnborrowing
-            // 
-            btnborrowing.BackColor = Color.FromArgb(128, 255, 255);
-            btnborrowing.Font = new Font("Stencil", 9F);
-            btnborrowing.Location = new Point(426, 9);
-            btnborrowing.Margin = new Padding(3, 2, 3, 2);
-            btnborrowing.Name = "btnborrowing";
-            btnborrowing.Size = new Size(147, 22);
-            btnborrowing.TabIndex = 1;
-            btnborrowing.Text = "BORROWING EQUIPMENT";
-            btnborrowing.UseVisualStyleBackColor = false;
-            // 
-            // button3
-            // 
-            button3.BackColor = Color.FromArgb(128, 255, 255);
-            button3.Font = new Font("Stencil", 9F);
-            button3.Location = new Point(649, 9);
-            button3.Margin = new Padding(3, 2, 3, 2);
-            button3.Name = "button3";
-            button3.Size = new Size(147, 22);
-            button3.TabIndex = 2;
-            button3.Text = "MY PREFERENCES";
-            button3.UseVisualStyleBackColor = false;
+            btnDashboard.BackColor = Color.FromArgb(128, 255, 255);
+            btnDashboard.Font = new Font("Segoe Fluent Icons", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnDashboard.Location = new Point(224, 6);
+            btnDashboard.Margin = new Padding(3, 2, 3, 2);
+            btnDashboard.Name = "btnDashboard";
+            btnDashboard.Size = new Size(147, 32);
+            btnDashboard.TabIndex = 0;
+            btnDashboard.Text = "DASHBOARD";
+            btnDashboard.UseVisualStyleBackColor = false;
             // 
             // label1
             // 
@@ -140,7 +116,7 @@
             label1.BackColor = Color.FromArgb(128, 255, 255);
             label1.Font = new Font("Britannic Bold", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.Black;
-            label1.Location = new Point(4, 6);
+            label1.Location = new Point(10, 13);
             label1.Name = "label1";
             label1.Size = new Size(108, 25);
             label1.TabIndex = 3;
@@ -165,7 +141,7 @@
             pictureBox1.Location = new Point(-3, 1);
             pictureBox1.Margin = new Padding(3, 2, 3, 2);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(941, 33);
+            pictureBox1.Size = new Size(941, 45);
             pictureBox1.TabIndex = 6;
             pictureBox1.TabStop = false;
             // 
@@ -393,21 +369,22 @@
             pictureBox12.TabIndex = 27;
             pictureBox12.TabStop = false;
             // 
-            // textBox1
+            // txtSearch
             // 
-            textBox1.Location = new Point(10, 308);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(721, 23);
-            textBox1.TabIndex = 28;
+            txtSearch.Location = new Point(10, 308);
+            txtSearch.Name = "txtSearch";
+            txtSearch.Size = new Size(721, 23);
+            txtSearch.TabIndex = 28;
             // 
-            // button1
+            // btnSearch
             // 
-            button1.Location = new Point(737, 301);
-            button1.Name = "button1";
-            button1.Size = new Size(131, 34);
-            button1.TabIndex = 29;
-            button1.Text = "SEARCH BUTTON TO";
-            button1.UseVisualStyleBackColor = true;
+            btnSearch.Location = new Point(737, 303);
+            btnSearch.Name = "btnSearch";
+            btnSearch.Size = new Size(121, 30);
+            btnSearch.TabIndex = 29;
+            btnSearch.Text = "SEARCH BUTTON ";
+            btnSearch.UseVisualStyleBackColor = true;
+            btnSearch.Click += btnSearch_Click;
             // 
             // pictureBox13
             // 
@@ -444,29 +421,29 @@
             pictureBox14.TabIndex = 32;
             pictureBox14.TabStop = false;
             // 
-            // pictureBox15
+            // pbTvl
             // 
-            pictureBox15.BackColor = Color.FromArgb(128, 255, 255);
-            pictureBox15.BackgroundImageLayout = ImageLayout.None;
-            pictureBox15.BorderStyle = BorderStyle.FixedSingle;
-            pictureBox15.Location = new Point(264, 423);
-            pictureBox15.Margin = new Padding(3, 2, 3, 2);
-            pictureBox15.Name = "pictureBox15";
-            pictureBox15.Size = new Size(179, 179);
-            pictureBox15.TabIndex = 33;
-            pictureBox15.TabStop = false;
+            pbTvl.BackColor = Color.FromArgb(128, 255, 255);
+            pbTvl.BackgroundImageLayout = ImageLayout.None;
+            pbTvl.BorderStyle = BorderStyle.FixedSingle;
+            pbTvl.Location = new Point(264, 423);
+            pbTvl.Margin = new Padding(3, 2, 3, 2);
+            pbTvl.Name = "pbTvl";
+            pbTvl.Size = new Size(179, 179);
+            pbTvl.TabIndex = 33;
+            pbTvl.TabStop = false;
             // 
-            // pictureBox16
+            // pbStem
             // 
-            pictureBox16.BackColor = Color.FromArgb(128, 255, 255);
-            pictureBox16.BackgroundImageLayout = ImageLayout.None;
-            pictureBox16.BorderStyle = BorderStyle.FixedSingle;
-            pictureBox16.Location = new Point(19, 423);
-            pictureBox16.Margin = new Padding(3, 2, 3, 2);
-            pictureBox16.Name = "pictureBox16";
-            pictureBox16.Size = new Size(213, 179);
-            pictureBox16.TabIndex = 34;
-            pictureBox16.TabStop = false;
+            pbStem.BackColor = Color.FromArgb(128, 255, 255);
+            pbStem.BackgroundImageLayout = ImageLayout.None;
+            pbStem.BorderStyle = BorderStyle.FixedSingle;
+            pbStem.Location = new Point(19, 423);
+            pbStem.Margin = new Padding(3, 2, 3, 2);
+            pbStem.Name = "pbStem";
+            pbStem.Size = new Size(213, 179);
+            pbStem.TabIndex = 34;
+            pbStem.TabStop = false;
             // 
             // pictureBox17
             // 
@@ -627,11 +604,37 @@
             label21.TabIndex = 52;
             label21.Text = "Featured Equipment";
             // 
+            // btnBorrowing
+            // 
+            btnBorrowing.BackColor = Color.FromArgb(128, 255, 255);
+            btnBorrowing.Font = new Font("Segoe Fluent Icons", 11.25F, FontStyle.Bold);
+            btnBorrowing.Location = new Point(467, 7);
+            btnBorrowing.Margin = new Padding(3, 2, 3, 2);
+            btnBorrowing.Name = "btnBorrowing";
+            btnBorrowing.Size = new Size(147, 31);
+            btnBorrowing.TabIndex = 53;
+            btnBorrowing.Text = "BORROWING";
+            btnBorrowing.UseVisualStyleBackColor = false;
+            // 
+            // btnPrefer
+            // 
+            btnPrefer.BackColor = Color.FromArgb(128, 255, 255);
+            btnPrefer.Font = new Font("Segoe Fluent Icons", 11.25F, FontStyle.Bold);
+            btnPrefer.Location = new Point(711, 6);
+            btnPrefer.Margin = new Padding(3, 2, 3, 2);
+            btnPrefer.Name = "btnPrefer";
+            btnPrefer.Size = new Size(147, 32);
+            btnPrefer.TabIndex = 54;
+            btnPrefer.Text = "MY PREFERENCES";
+            btnPrefer.UseVisualStyleBackColor = false;
+            // 
             // DASHBOARD
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(950, 643);
+            Controls.Add(btnPrefer);
+            Controls.Add(btnBorrowing);
             Controls.Add(label21);
             Controls.Add(label20);
             Controls.Add(label19);
@@ -646,13 +649,13 @@
             Controls.Add(pictureBox22);
             Controls.Add(pictureBox21);
             Controls.Add(pictureBox17);
-            Controls.Add(pictureBox16);
-            Controls.Add(pictureBox15);
+            Controls.Add(pbStem);
+            Controls.Add(pbTvl);
             Controls.Add(pictureBox14);
             Controls.Add(label12);
             Controls.Add(pictureBox13);
-            Controls.Add(button1);
-            Controls.Add(textBox1);
+            Controls.Add(btnSearch);
+            Controls.Add(txtSearch);
             Controls.Add(pictureBox12);
             Controls.Add(label11);
             Controls.Add(label10);
@@ -674,9 +677,7 @@
             Controls.Add(pictureBox3);
             Controls.Add(label2);
             Controls.Add(label1);
-            Controls.Add(button3);
-            Controls.Add(btnborrowing);
-            Controls.Add(btndashboard);
+            Controls.Add(btnDashboard);
             Controls.Add(pictureBox1);
             Controls.Add(pictureBox2);
             Margin = new Padding(3, 2, 3, 2);
@@ -697,8 +698,8 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox12).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox13).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox14).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox15).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox16).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pbTvl).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pbStem).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox17).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox21).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox22).EndInit();
@@ -710,9 +711,7 @@
 
         #endregion
 
-        private Button btndashboard;
-        private Button btnborrowing;
-        private Button button3;
+        private Button btnDashboard;
         private Label label1;
         private Label label2;
         private PictureBox pictureBox1;
@@ -736,13 +735,13 @@
         private Label label10;
         private Label label11;
         private PictureBox pictureBox12;
-        private TextBox textBox1;
-        private Button button1;
+        private TextBox txtSearch;
+        private Button btnSearch;
         private PictureBox pictureBox13;
         private Label label12;
         private PictureBox pictureBox14;
-        private PictureBox pictureBox15;
-        private PictureBox pictureBox16;
+        private PictureBox pbTvl;
+        private PictureBox pbStem;
         private PictureBox pictureBox17;
         private PictureBox pictureBox21;
         private PictureBox pictureBox22;
@@ -757,5 +756,7 @@
         private Label label19;
         private Label label20;
         private Label label21;
+        private Button btnBorrowing;
+        private Button btnPrefer;
     }
 }
