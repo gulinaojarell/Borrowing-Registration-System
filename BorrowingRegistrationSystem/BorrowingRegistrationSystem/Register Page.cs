@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
 
 namespace BorrowingRegistrationSystem
 {
@@ -40,6 +41,40 @@ namespace BorrowingRegistrationSystem
             Form1 form1 = new Form1();
             form1.Show();
             this.Hide();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string connStr =
+        "server=127.0.0.1;port=3306;database=borrowing_db;uid=root;pwd=J@rell123;";
+
+            using (MySqlConnection conn = new MySqlConnection(connStr))
+            {
+                conn.Open();
+
+                string query =
+                "INSERT INTO users(Full_Name, LRN, EMAIL_ADDRESS, EMAIL_PASSWORD) " +
+                "VALUES(@fullname,@lrn,@email,@password)";
+
+                MySqlCommand cmd = new MySqlCommand(query, conn);
+
+                cmd.Parameters.AddWithValue("@fullname", TxtFullName.Text);
+                cmd.Parameters.AddWithValue("@lrn", TxtLrn.Text);
+                cmd.Parameters.AddWithValue("@email", TxtEmailAdd.Text);
+                cmd.Parameters.AddWithValue("@password", TxtPass.Text);
+
+                cmd.ExecuteNonQuery();
+
+                MessageBox.Show("Registered Successfully!");
+            }
+        }
+
+        private void ChkSame_CheckedChanged(object sender, EventArgs e)
+        {
+            if (ChkSame.Checked)
+            {
+                TxtCpass.Text = TxtPass.Text;
+            }
         }
     }
 }

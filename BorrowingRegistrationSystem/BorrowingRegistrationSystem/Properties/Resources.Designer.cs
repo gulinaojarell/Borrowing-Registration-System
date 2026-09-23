@@ -73,6 +73,26 @@ namespace BorrowingRegistrationSystem.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _816123254_1070533205751118_4491962060484800000_n__1_ {
+            get {
+                object obj = ResourceManager.GetObject("816123254_1070533205751118_4491962060484800000_n (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _818291030_1723079875423712_7099495941803114957_n {
+            get {
+                object obj = ResourceManager.GetObject("818291030_1723079875423712_7099495941803114957_n", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap calendar {
             get {
                 object obj = ResourceManager.GetObject("calendar", resourceCulture);
@@ -126,6 +146,16 @@ namespace BorrowingRegistrationSystem.Properties {
         internal static System.Drawing.Bitmap icon {
             get {
                 object obj = ResourceManager.GetObject("icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap iconlrn {
+            get {
+                object obj = ResourceManager.GetObject("iconlrn", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

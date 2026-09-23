@@ -31,41 +31,35 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
             label2 = new Label();
             label3 = new Label();
-            textBox2 = new TextBox();
-            textBox1 = new TextBox();
-            textBox3 = new TextBox();
-            comboBox1 = new ComboBox();
-            label4 = new Label();
-            button1 = new Button();
+            TxtLrn = new TextBox();
+            TxtEmailAdd = new TextBox();
+            TxtPass = new TextBox();
+            BtnReg = new Button();
             label5 = new Label();
             label6 = new Label();
             label7 = new Label();
-            textBox5 = new TextBox();
+            TxtFullName = new TextBox();
             label8 = new Label();
-            textBox4 = new TextBox();
+            TxtCpass = new TextBox();
             label9 = new Label();
-            button2 = new Button();
+            BtnBack = new Button();
             pictureBox2 = new PictureBox();
             pictureBox3 = new PictureBox();
             pictureBox4 = new PictureBox();
             pictureBox5 = new PictureBox();
             pictureBox6 = new PictureBox();
-            pictureBox7 = new PictureBox();
-            pictureBox1 = new PictureBox();
-            pictureBox8 = new PictureBox();
+            ChkSame = new CheckBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
             SuspendLayout();
             // 
             // label2
             // 
             label2.AutoSize = true;
+            label2.BackColor = Color.Transparent;
             label2.Font = new Font("Microsoft Sans Serif", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label2.ForeColor = Color.Blue;
             label2.Location = new Point(656, 44);
@@ -79,9 +73,10 @@
             // label3
             // 
             label3.AutoSize = true;
+            label3.BackColor = Color.Transparent;
             label3.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label3.ForeColor = Color.Blue;
-            label3.Location = new Point(656, 88);
+            label3.Location = new Point(604, 88);
             label3.Margin = new Padding(4, 0, 4, 0);
             label3.Name = "label3";
             label3.Size = new Size(332, 18);
@@ -89,70 +84,50 @@
             label3.Text = "Join our system and start reserving equipmemnts";
             label3.Click += label3_Click;
             // 
-            // textBox2
+            // TxtLrn
             // 
-            textBox2.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold);
-            textBox2.Location = new Point(645, 190);
-            textBox2.Margin = new Padding(4, 2, 4, 2);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(308, 30);
-            textBox2.TabIndex = 4;
+            TxtLrn.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold);
+            TxtLrn.Location = new Point(645, 190);
+            TxtLrn.Margin = new Padding(4, 2, 4, 2);
+            TxtLrn.Name = "TxtLrn";
+            TxtLrn.Size = new Size(308, 30);
+            TxtLrn.TabIndex = 4;
             // 
-            // textBox1
+            // TxtEmailAdd
             // 
-            textBox1.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold);
-            textBox1.Location = new Point(645, 235);
-            textBox1.Margin = new Padding(4, 2, 4, 2);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(308, 30);
-            textBox1.TabIndex = 5;
+            TxtEmailAdd.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold);
+            TxtEmailAdd.Location = new Point(645, 235);
+            TxtEmailAdd.Margin = new Padding(4, 2, 4, 2);
+            TxtEmailAdd.Name = "TxtEmailAdd";
+            TxtEmailAdd.Size = new Size(308, 30);
+            TxtEmailAdd.TabIndex = 5;
             // 
-            // textBox3
+            // TxtPass
             // 
-            textBox3.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold);
-            textBox3.Location = new Point(645, 291);
-            textBox3.Margin = new Padding(4, 2, 4, 2);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(308, 30);
-            textBox3.TabIndex = 6;
+            TxtPass.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold);
+            TxtPass.Location = new Point(645, 291);
+            TxtPass.Margin = new Padding(4, 2, 4, 2);
+            TxtPass.Name = "TxtPass";
+            TxtPass.Size = new Size(308, 30);
+            TxtPass.TabIndex = 6;
             // 
-            // comboBox1
+            // BtnReg
             // 
-            comboBox1.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold);
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(645, 382);
-            comboBox1.Margin = new Padding(4, 2, 4, 2);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(308, 31);
-            comboBox1.TabIndex = 8;
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label4.ForeColor = Color.Blue;
-            label4.Location = new Point(430, 382);
-            label4.Margin = new Padding(9, 0, 9, 0);
-            label4.Name = "label4";
-            label4.Size = new Size(129, 25);
-            label4.TabIndex = 9;
-            label4.Text = "Select Strand:";
-            // 
-            // button1
-            // 
-            button1.BackColor = Color.Navy;
-            button1.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button1.ForeColor = Color.White;
-            button1.Location = new Point(583, 454);
-            button1.Name = "button1";
-            button1.Size = new Size(121, 38);
-            button1.TabIndex = 10;
-            button1.Text = "Register";
-            button1.UseVisualStyleBackColor = false;
+            BtnReg.BackColor = Color.Navy;
+            BtnReg.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            BtnReg.ForeColor = Color.White;
+            BtnReg.Location = new Point(457, 439);
+            BtnReg.Name = "BtnReg";
+            BtnReg.Size = new Size(121, 38);
+            BtnReg.TabIndex = 10;
+            BtnReg.Text = "Register";
+            BtnReg.UseVisualStyleBackColor = false;
+            BtnReg.Click += button1_Click;
             // 
             // label5
             // 
             label5.AutoSize = true;
+            label5.BackColor = Color.Transparent;
             label5.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold);
             label5.ForeColor = Color.Blue;
             label5.Location = new Point(457, 140);
@@ -164,6 +139,7 @@
             // label6
             // 
             label6.AutoSize = true;
+            label6.BackColor = Color.Transparent;
             label6.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold);
             label6.ForeColor = Color.Blue;
             label6.Location = new Point(423, 240);
@@ -175,6 +151,7 @@
             // label7
             // 
             label7.AutoSize = true;
+            label7.BackColor = Color.Transparent;
             label7.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold);
             label7.ForeColor = Color.Blue;
             label7.Location = new Point(462, 291);
@@ -183,18 +160,19 @@
             label7.TabIndex = 14;
             label7.Text = "Password:";
             // 
-            // textBox5
+            // TxtFullName
             // 
-            textBox5.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold);
-            textBox5.Location = new Point(645, 140);
-            textBox5.Margin = new Padding(4, 2, 4, 2);
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(308, 30);
-            textBox5.TabIndex = 16;
+            TxtFullName.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold);
+            TxtFullName.Location = new Point(645, 140);
+            TxtFullName.Margin = new Padding(4, 2, 4, 2);
+            TxtFullName.Name = "TxtFullName";
+            TxtFullName.Size = new Size(308, 30);
+            TxtFullName.TabIndex = 16;
             // 
             // label8
             // 
             label8.AutoSize = true;
+            label8.BackColor = Color.Transparent;
             label8.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold);
             label8.ForeColor = Color.Blue;
             label8.Location = new Point(507, 191);
@@ -203,38 +181,39 @@
             label8.TabIndex = 17;
             label8.Text = "LRN:";
             // 
-            // textBox4
+            // TxtCpass
             // 
-            textBox4.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold);
-            textBox4.Location = new Point(645, 338);
-            textBox4.Margin = new Padding(4, 2, 4, 2);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(308, 30);
-            textBox4.TabIndex = 18;
+            TxtCpass.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold);
+            TxtCpass.Location = new Point(645, 352);
+            TxtCpass.Margin = new Padding(4, 2, 4, 2);
+            TxtCpass.Name = "TxtCpass";
+            TxtCpass.Size = new Size(308, 30);
+            TxtCpass.TabIndex = 18;
             // 
             // label9
             // 
             label9.AutoSize = true;
+            label9.BackColor = Color.Transparent;
             label9.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold);
             label9.ForeColor = Color.Blue;
-            label9.Location = new Point(389, 338);
+            label9.Location = new Point(389, 352);
             label9.Name = "label9";
             label9.Size = new Size(170, 25);
             label9.TabIndex = 19;
             label9.Text = "Confirm Password:";
             // 
-            // button2
+            // BtnBack
             // 
-            button2.BackColor = Color.Navy;
-            button2.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button2.ForeColor = Color.White;
-            button2.Location = new Point(832, 454);
-            button2.Name = "button2";
-            button2.Size = new Size(121, 38);
-            button2.TabIndex = 20;
-            button2.Text = "Back";
-            button2.UseVisualStyleBackColor = false;
-            button2.Click += button2_Click;
+            BtnBack.BackColor = Color.Navy;
+            BtnBack.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            BtnBack.ForeColor = Color.White;
+            BtnBack.Location = new Point(862, 439);
+            BtnBack.Name = "BtnBack";
+            BtnBack.Size = new Size(121, 38);
+            BtnBack.TabIndex = 20;
+            BtnBack.Text = "Back";
+            BtnBack.UseVisualStyleBackColor = false;
+            BtnBack.Click += button2_Click;
             // 
             // pictureBox2
             // 
@@ -285,43 +264,25 @@
             pictureBox6.BackColor = Color.Transparent;
             pictureBox6.BackgroundImage = Properties.Resources._5087607;
             pictureBox6.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBox6.Location = new Point(565, 326);
+            pictureBox6.Location = new Point(565, 338);
             pictureBox6.Name = "pictureBox6";
             pictureBox6.Size = new Size(61, 42);
             pictureBox6.TabIndex = 25;
             pictureBox6.TabStop = false;
             // 
-            // pictureBox7
+            // ChkSame
             // 
-            pictureBox7.BackColor = Color.Transparent;
-            pictureBox7.BackgroundImage = Properties.Resources._5087607;
-            pictureBox7.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBox7.Location = new Point(565, 374);
-            pictureBox7.Name = "pictureBox7";
-            pictureBox7.Size = new Size(61, 42);
-            pictureBox7.TabIndex = 26;
-            pictureBox7.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            pictureBox1.BackColor = Color.FromArgb(192, 255, 255);
-            pictureBox1.BackgroundImage = (Image)resources.GetObject("pictureBox1.BackgroundImage");
-            pictureBox1.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBox1.Location = new Point(0, -1);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(383, 523);
-            pictureBox1.TabIndex = 11;
-            pictureBox1.TabStop = false;
-            // 
-            // pictureBox8
-            // 
-            pictureBox8.BackgroundImage = Properties.Resources.images__1_;
-            pictureBox8.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBox8.Location = new Point(501, 44);
-            pictureBox8.Name = "pictureBox8";
-            pictureBox8.Size = new Size(125, 62);
-            pictureBox8.TabIndex = 27;
-            pictureBox8.TabStop = false;
+            ChkSame.AutoSize = true;
+            ChkSame.BackColor = Color.Transparent;
+            ChkSame.Font = new Font("Segoe UI", 7.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            ChkSame.ForeColor = Color.Blue;
+            ChkSame.Location = new Point(722, 326);
+            ChkSame.Name = "ChkSame";
+            ChkSame.Size = new Size(231, 21);
+            ChkSame.TabIndex = 26;
+            ChkSame.Text = "Same as your previous password";
+            ChkSame.UseVisualStyleBackColor = false;
+            ChkSame.CheckedChanged += ChkSame_CheckedChanged;
             // 
             // Form2
             // 
@@ -329,29 +290,27 @@
             AutoScaleMode = AutoScaleMode.Font;
             AutoSize = true;
             BackColor = Color.FromArgb(192, 255, 255);
+            BackgroundImage = Properties.Resources._818291030_1723079875423712_7099495941803114957_n;
+            BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1039, 534);
-            Controls.Add(pictureBox8);
-            Controls.Add(pictureBox7);
+            Controls.Add(ChkSame);
             Controls.Add(pictureBox6);
             Controls.Add(pictureBox5);
             Controls.Add(pictureBox4);
             Controls.Add(pictureBox3);
             Controls.Add(pictureBox2);
-            Controls.Add(button2);
+            Controls.Add(BtnBack);
             Controls.Add(label9);
-            Controls.Add(textBox4);
+            Controls.Add(TxtCpass);
             Controls.Add(label8);
-            Controls.Add(textBox5);
+            Controls.Add(TxtFullName);
             Controls.Add(label7);
             Controls.Add(label6);
             Controls.Add(label5);
-            Controls.Add(pictureBox1);
-            Controls.Add(button1);
-            Controls.Add(label4);
-            Controls.Add(comboBox1);
-            Controls.Add(textBox3);
-            Controls.Add(textBox1);
-            Controls.Add(textBox2);
+            Controls.Add(BtnReg);
+            Controls.Add(TxtPass);
+            Controls.Add(TxtEmailAdd);
+            Controls.Add(TxtLrn);
             Controls.Add(label3);
             Controls.Add(label2);
             Font = new Font("Segoe UI", 19.8000011F, FontStyle.Bold);
@@ -364,9 +323,6 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox8).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -374,27 +330,23 @@
         #endregion
         private Label label2;
         private Label label3;
-        private TextBox textBox2;
-        private TextBox textBox1;
-        private TextBox textBox3;
-        private ComboBox comboBox1;
-        private Label label4;
-        private Button button1;
+        private TextBox TxtLrn;
+        private TextBox TxtEmailAdd;
+        private TextBox TxtPass;
+        private Button BtnReg;
         private Label label5;
         private Label label6;
         private Label label7;
-        private TextBox textBox5;
+        private TextBox TxtFullName;
         private Label label8;
-        private TextBox textBox4;
+        private TextBox TxtCpass;
         private Label label9;
-        private Button button2;
+        private Button BtnBack;
         private PictureBox pictureBox2;
         private PictureBox pictureBox3;
         private PictureBox pictureBox4;
         private PictureBox pictureBox5;
         private PictureBox pictureBox6;
-        private PictureBox pictureBox7;
-        private PictureBox pictureBox1;
-        private PictureBox pictureBox8;
+        private CheckBox ChkSame;
     }
 }
