@@ -30,8 +30,7 @@ namespace BorrowingRegistrationSystem
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
-            
-        
+
             string search = txtSearch.Text.Trim().ToLower();
 
             if (string.IsNullOrEmpty(search))
@@ -64,7 +63,9 @@ namespace BorrowingRegistrationSystem
                                 MessageBoxButtons.OK,
                                 MessageBoxIcon.Information);
             }
-    }
+
+
+        }
     }
 }
 

@@ -378,12 +378,14 @@
             // 
             // btnSearch
             // 
-            btnSearch.Location = new Point(737, 303);
+            btnSearch.BackColor = Color.Indigo;
+            btnSearch.BackgroundImage = Properties.Resources.search;
+            btnSearch.BackgroundImageLayout = ImageLayout.Stretch;
+            btnSearch.Location = new Point(737, 301);
             btnSearch.Name = "btnSearch";
-            btnSearch.Size = new Size(121, 30);
+            btnSearch.Size = new Size(59, 34);
             btnSearch.TabIndex = 29;
-            btnSearch.Text = "SEARCH BUTTON ";
-            btnSearch.UseVisualStyleBackColor = true;
+            btnSearch.UseVisualStyleBackColor = false;
             btnSearch.Click += btnSearch_Click;
             // 
             // pictureBox13
